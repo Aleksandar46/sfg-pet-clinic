@@ -27,7 +27,7 @@ public class PetSDJpaService implements PetService {
     }
 
     @Override
-    public Pet findByid(Long aLong) {
+    public Pet findById(Long aLong) {
         return petRepository.findById(aLong).orElse(null);
     }
 

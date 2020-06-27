@@ -27,7 +27,7 @@ public class SpecialitySDJpaService implements SpecialtyService {
     }
 
     @Override
-    public Speciality findByid(Long aLong) {
+    public Speciality findById(Long aLong) {
         return specialtyRepository.findById(aLong).orElse(null);
     }
 
