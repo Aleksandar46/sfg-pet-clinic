@@ -2,6 +2,7 @@ package guru.springframework.sfgpetclinic.bootstrap;
 
 import guru.springframework.sfgpetclinic.model.*;
 import guru.springframework.sfgpetclinic.services.*;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -50,6 +51,7 @@ public class DataLoader implements CommandLineRunner {
 
         Speciality dentistry = new Speciality();
         dentistry.setDescription("Dentistry");
+        
         Speciality savedDentistry = specialtyService.save(dentistry);
 
         Owner owner1 = new Owner();
